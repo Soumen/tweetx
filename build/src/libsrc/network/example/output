@@ -1,0 +1,15 @@
+
+Not using Proxy
+128.121.146.100
+Server Certificates:
+Subject: /C=US/O=twitter.com/OU=GT09721236/OU=See www.rapidssl.com/resources/cps (c)08/OU=Domain Control Validated - RapidSSL(R)/CN=twitter.com
+Issuer: p߷p߷
+input = POST /statuses/update.json HTTP/1.1
+Host: www.twitter.com
+User-Agent: tweetx/1.0 Linux
+Authorization: Basic dHdlZXR4ZGV2OmFtaXRlc2g=
+Content-Length: 45
+Content-Type: application/x-www-form-urlencoded
+
+status=needed Https proxy server for testing 
+Data = 

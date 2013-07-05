@@ -1,0 +1,43 @@
+1)__FILE__
+
+2)__LINE__
+
+3)__func__
+
+4)__PRETTY_FUNCTION__
+Same as __FUNC__, but pretty-printed (C++ functions become more readable). Provided for Gnu CC compatibility. 
+#ifndef __PRETTY_FUNCTION__
+#define __PRETTY_FUNCTION__ __func__
+#endif
+
+5)__TIME__
+Always defined. Set to compilation time in the form "hh:mm:ss". 
+
+6)__cplusplus
+
+7)__TIMESTAMP__
+Always defined. Set to compilation time in the form "Ddd Mmm dd hh:mm:ss yyyy"
+
+8) __linux__
+
+9) __GNUC__  for gcc check
+10) __GNUG__ for g++ check
+it is equivalent to testing (__GNUC__ && __cplusplus).
+11)__SIZEOF_INT__
+__SIZEOF_LONG__
+__SIZEOF_LONG_LONG__
+__SIZEOF_SHORT__
+__SIZEOF_POINTER__
+__SIZEOF_FLOAT__
+__SIZEOF_DOUBLE__
+__SIZEOF_LONG_DOUBLE__
+__SIZEOF_SIZE_T__
+__SIZEOF_WCHAR_T__
+__SIZEOF_WINT_T__
+__SIZEOF_PTRDIFF_T__
+    Defined to the number of bytes of the C standard data types: int, long, long long, short, void *, float, double, long double, size_t, wchar_t, wint_t and ptrdiff_t.
+12)__DEPRECATED
+        This macro is defined, with value 1, when compiling a C++ source file with warnings about deprecated constructs enabled. These warnings are enabled by default, but can be disabled with -Wno-deprecated. 
+
+13)__GXX_RTTI
+    This macro is defined, with value 1, when compiling a C++ source file with runtime type identification enabled. If -fno-rtti is used when compiling the file, then this macro is not defined. 

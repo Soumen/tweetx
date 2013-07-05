@@ -1,0 +1,46 @@
+verify_credentials
+	checks to see if u:p is ok
+
+end_session
+	log out
+
+public_timeline
+	
+
+friends_timeline
+
+
+user_timeline
+
+
+show 
+	should be called from within timeline
+
+update 
+	called when new status is typed in
+
+replies
+	returns 20 recent @replies
+
+friends
+	returns 100 friends of users
+
+followers
+	returns 100 followers
+
+show
+	returns informationn of givin user
+
+direct_messages
+	returns 20 last direct messages to user
+
+sent
+	returns 20 last direct sent messages from user
+
+new 
+	void - sends a direct message
+
+create 
+	void - adds a new user
+
+

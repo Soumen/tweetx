@@ -1,0 +1,4 @@
+HOST: www.twitter.com
+SSL = YES
+HTTP_PROXY = 1.1.1.1
+HTTP_PORT = 8080

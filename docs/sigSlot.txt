@@ -1,0 +1,33 @@
+coding guidelines for sigslot. == ami
+We are going to use everything is single thread.
+1) 
+signal name ; prefix => Signal; 
+e.g.
+class Switch
+{
+ signal0<> SignalClickedEvent;
+};
+
+2) Slot name: prefix=> On
+class Light : public has_slots<>
+{
+  void OnClickedEvent();
+};
+
+3)    Multithreading support requires the windows.h header under Win32, or pthreads.h under an OS that supports Posix Threads.
+
+4) // Single-threaded
+signal1<int, single_threaded> Sig1;
+// Multithreaded Global
+signal1<int, multi_threaded_global> Sig2;
+// Multithreaded Local
+signal1<int, multi_threaded_local> Sig3
+
+    Whilst an application is free to use any combination of threading modes internally, it is a bad idea
+    to combine single and multithreaded policies that need to interoperate with each other. This is one
+    of the only ‘violations’ that the compiler won’t error on, so it is up to the programmer to be careful.
+    Mixing multi threaded global and multi threaded local is permitted, however, since both properly
+    implement locking semantics.
+
+
+

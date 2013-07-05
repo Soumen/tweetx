@@ -1,0 +1,7 @@
+USERNAME=tweetxdev
+PASSWORD=amitesh
+HTTP_PROXY = 1.1.1.1
+HTTP_PORT = 23
+MSMTP_COMMAND=msmtp -t -C ~/.msmtprc -a gmail
+MOBILE_NUMBER = 9000979743@airtelap.com
+MSMTP_TIMEOUT=10
