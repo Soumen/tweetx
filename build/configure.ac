@@ -4,7 +4,7 @@
 AC_PREREQ(2.61)
 #AC_INIT(FULL-PACKAGE-NAME, VERSION, BUG-REPORT-ADDRESS)
 AC_INIT(tweetx,0.1,tweetx-dev@googlegroups.com)
-AM_INIT_AUTOMAKE(-Wall)
+AM_INIT_AUTOMAKE([-Wall foreign])
 
 AC_CONFIG_SRCDIR([src/libsrc/log/stream.cc])
 AC_CONFIG_HEADER([config.h])
